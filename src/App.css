@@ -1,0 +1,108 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  background-color: #fff; /* Define o fundo branco */
+  color: #333; /* Cor do texto */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding e a borda não aumentem o tamanho total */
+}
+
+input[type="text"]:focus {
+  outline: none; /* Remove a borda azul padrão ao focar */
+  border-color: #007bff; /* Borda azul quando o campo está ativo */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Estilo para o resultado da análise */
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.file-name {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+p {
+  color: #333;
+}
+
+/* Alinhamento de mensagens de carregamento e erro */
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p[style*="color: red"] {
+  color: #ff4d4d;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+}
